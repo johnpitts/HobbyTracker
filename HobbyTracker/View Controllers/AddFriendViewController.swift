@@ -34,12 +34,25 @@ class AddFriendViewController: UIViewController {
     @IBAction func saveButtonTapped(_ sender: UIBarButtonItem) {
         
         // pull data from text fields, validate if data is good
+        // we use guard here to make name and hometown required, but the hobbies we use if-let bc the hobbies aren't required to continue with making the new friend
+        guard let name = nameTextField.text,
+              let hometown = hometownTextField.text,
+              !name.isEmpty else { return }  // can't continue without a name, so return, we simply add hometown as a required field too (upto developer)
+        var friend = Friend(name: name, hometown: hometown, hobbies: [])
         
-        // turn everything into a valid record... so let's create the model
+        // add hobbies to friend model, for this particular user-entered friend
+        if let hobby1 = hobby1TextField.text,
+            !hobby1.isEmpty {
+            friend.hobbies.append(hobby1)
+        }
+        if let hobby2 = hobby1TextField.text,
+            !hobby2.isEmpty {
+            friend.hobbies.append(hobby2)
+        }
+        if let hobby3 = hobby1TextField.text,
+            !hobby3.isEmpty {
+            friend.hobbies.append(hobby3)
+        }
+        // we would normally use a modelController to pass this new data, but in this case we're going to use a delegate
     }
-    
-    
-
-
-
 }
