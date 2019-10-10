@@ -61,6 +61,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="hometownLabel" destination="XSF-B4-VX0" id="2R9-51-fdT"/>
+                                            <outlet property="nameLabel" destination="c3E-Ob-QNN" id="I5X-7q-uo7"/>
+                                            <outlet property="numberOfHobbiesLabel" destination="fYN-Py-LQo" id="Qnr-NI-u69"/>
                                             <segue destination="mQM-Mx-exp" kind="show" identifier="ShowDetail" id="85s-Zu-EDu"/>
                                         </connections>
                                     </tableViewCell>
@@ -147,9 +150,17 @@
                                 <rect key="frame" x="0.0" y="818" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <items>
-                                    <barButtonItem title="Cancel" id="OfR-ma-8u6"/>
+                                    <barButtonItem title="Cancel" id="OfR-ma-8u6">
+                                        <connections>
+                                            <action selector="cancelButtonTapped:" destination="Gtf-Rk-AWc" id="ffe-8F-Eus"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="ULB-Y4-jAm"/>
-                                    <barButtonItem title="Save" id="7Fy-Qv-cTu"/>
+                                    <barButtonItem title="Save" id="7Fy-Qv-cTu">
+                                        <connections>
+                                            <action selector="saveButtonTapped:" destination="Gtf-Rk-AWc" id="njX-VJ-fy1"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>
@@ -161,6 +172,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="GZ1-XW-5WR"/>
                     </view>
+                    <connections>
+                        <outlet property="hobby1TextField" destination="4d5-7A-89Q" id="PoQ-Qb-ZYi"/>
+                        <outlet property="hobby2TextField" destination="lax-CX-JGv" id="JVO-Ta-JXR"/>
+                        <outlet property="hobby3TextField" destination="MWU-Kh-kMs" id="QeG-rt-HFp"/>
+                        <outlet property="hometownTextField" destination="euM-sg-lRu" id="beA-YF-CKO"/>
+                        <outlet property="nameTextField" destination="YaJ-Hc-qle" id="v9k-b0-2Qd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4zQ-cQ-pZM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -224,6 +242,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2DU-nk-k8d"/>
                     </view>
+                    <connections>
+                        <outlet property="hobbyDescriptionTextView" destination="fI5-Fb-AAW" id="exN-bd-odp"/>
+                        <outlet property="hometownLabel" destination="V5J-CM-ftI" id="mZo-Il-wSd"/>
+                        <outlet property="imageView" destination="Let-wL-c4N" id="82s-lK-HGx"/>
+                        <outlet property="nameLabel" destination="269-WG-J02" id="dpM-MB-i7y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bHr-DN-a0W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

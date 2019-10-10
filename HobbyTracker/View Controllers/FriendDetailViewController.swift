@@ -9,6 +9,14 @@
 import UIKit
 
 class FriendDetailViewController: UIViewController {
+    
+    
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var hometownLabel: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var hobbyDescriptionTextView: UITextView!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

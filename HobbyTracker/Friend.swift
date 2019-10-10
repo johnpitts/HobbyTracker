@@ -11,6 +11,8 @@ import Foundation
 
 struct Friend {
     
-    var name: String
+    let name: String
+    let hometown: String
+    var hobbies: [String]
     
 }
