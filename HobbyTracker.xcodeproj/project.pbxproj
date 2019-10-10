@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		FCBE7F02234CEABB0083CB81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBE7F01234CEABB0083CB81 /* AppDelegate.swift */; };
-		FCBE7F04234CEABB0083CB81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBE7F03234CEABB0083CB81 /* ViewController.swift */; };
+		FCBE7F04234CEABB0083CB81 /* FriendsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBE7F03234CEABB0083CB81 /* FriendsTableViewController.swift */; };
 		FCBE7F07234CEABB0083CB81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCBE7F05234CEABB0083CB81 /* Main.storyboard */; };
 		FCBE7F09234CEABD0083CB81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCBE7F08234CEABD0083CB81 /* Assets.xcassets */; };
 		FCBE7F0C234CEABD0083CB81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCBE7F0A234CEABD0083CB81 /* LaunchScreen.storyboard */; };
+		FCBE7F14234F8F7C0083CB81 /* AddFriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBE7F13234F8F7C0083CB81 /* AddFriendViewController.swift */; };
+		FCBE7F16234F8F940083CB81 /* FriendDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBE7F15234F8F940083CB81 /* FriendDetailViewController.swift */; };
+		FCBE7F18234F8FB30083CB81 /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBE7F17234F8FB30083CB81 /* FriendTableViewCell.swift */; };
+		FCBE7F1A234F8FC20083CB81 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBE7F19234F8FC20083CB81 /* Friend.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FCBE7EFE234CEABB0083CB81 /* HobbyTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HobbyTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCBE7F01234CEABB0083CB81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FCBE7F03234CEABB0083CB81 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FCBE7F03234CEABB0083CB81 /* FriendsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewController.swift; sourceTree = "<group>"; };
 		FCBE7F06234CEABB0083CB81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FCBE7F08234CEABD0083CB81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCBE7F0B234CEABD0083CB81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FCBE7F0D234CEABD0083CB81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCBE7F13234F8F7C0083CB81 /* AddFriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendViewController.swift; sourceTree = "<group>"; };
+		FCBE7F15234F8F940083CB81 /* FriendDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetailViewController.swift; sourceTree = "<group>"; };
+		FCBE7F17234F8FB30083CB81 /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
+		FCBE7F19234F8FC20083CB81 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +63,25 @@
 			isa = PBXGroup;
 			children = (
 				FCBE7F01234CEABB0083CB81 /* AppDelegate.swift */,
-				FCBE7F03234CEABB0083CB81 /* ViewController.swift */,
+				FCBE7F1B234F90430083CB81 /* View Controllers */,
+				FCBE7F17234F8FB30083CB81 /* FriendTableViewCell.swift */,
+				FCBE7F19234F8FC20083CB81 /* Friend.swift */,
 				FCBE7F05234CEABB0083CB81 /* Main.storyboard */,
 				FCBE7F08234CEABD0083CB81 /* Assets.xcassets */,
 				FCBE7F0A234CEABD0083CB81 /* LaunchScreen.storyboard */,
 				FCBE7F0D234CEABD0083CB81 /* Info.plist */,
 			);
 			path = HobbyTracker;
+			sourceTree = "<group>";
+		};
+		FCBE7F1B234F90430083CB81 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FCBE7F03234CEABB0083CB81 /* FriendsTableViewController.swift */,
+				FCBE7F13234F8F7C0083CB81 /* AddFriendViewController.swift */,
+				FCBE7F15234F8F940083CB81 /* FriendDetailViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +155,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCBE7F04234CEABB0083CB81 /* ViewController.swift in Sources */,
+				FCBE7F14234F8F7C0083CB81 /* AddFriendViewController.swift in Sources */,
+				FCBE7F04234CEABB0083CB81 /* FriendsTableViewController.swift in Sources */,
+				FCBE7F18234F8FB30083CB81 /* FriendTableViewCell.swift in Sources */,
+				FCBE7F1A234F8FC20083CB81 /* Friend.swift in Sources */,
+				FCBE7F16234F8F940083CB81 /* FriendDetailViewController.swift in Sources */,
 				FCBE7F02234CEABB0083CB81 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
