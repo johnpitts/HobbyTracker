@@ -42,7 +42,7 @@ extension FriendsTableViewController: AddFriendDelegate {
     
     func friendWasAdded(_ friend: Friend) {
         friends.append(friend)
-        dismiss(animated: true, completion: nil)
+        
         tableView.reloadData()
     }
 }

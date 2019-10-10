@@ -60,6 +60,8 @@ class AddFriendViewController: UIViewController {
         }
         // we would normally use a modelController to pass this new data, but in this case we're going to use a delegate, the friend already exists now, full configured
         
+        dismiss(animated: true, completion: nil)
         delegate?.friendWasAdded(friend)
+        
     }
 }
