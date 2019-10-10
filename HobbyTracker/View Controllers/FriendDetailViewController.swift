@@ -17,11 +17,24 @@ class FriendDetailViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var hobbyDescriptionTextView: UITextView!
     
+    var friend: Friend?
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        updateViews()
+    }
+    
+    private func updateViews() {
+        guard let friend = friend else { return }
+        nameLabel.text = friend.name
+        hometownLabel.text = friend.hometown
+        var hobbyText = ""
+        for hobby in friend.hobbies {
+            hobbyText += "∙ \(hobby)\n"
+        }
+        hobbyDescriptionTextView.text = hobbyText
     }
     
 

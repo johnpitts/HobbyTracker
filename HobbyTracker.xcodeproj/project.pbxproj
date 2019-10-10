@@ -77,8 +77,8 @@
 		FCBE7F1B234F90430083CB81 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				FCBE7F03234CEABB0083CB81 /* FriendsTableViewController.swift */,
 				FCBE7F15234F8F940083CB81 /* FriendDetailViewController.swift */,
+				FCBE7F03234CEABB0083CB81 /* FriendsTableViewController.swift */,
 				FCBE7F13234F8F7C0083CB81 /* AddFriendViewController.swift */,
 			);
 			path = "View Controllers";

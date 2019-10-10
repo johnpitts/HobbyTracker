@@ -8,6 +8,11 @@
 
 import UIKit
 
+// put the protocol into the file that's sending the data
+protocol AddFriendDelegate {
+    func friendWasAdded(_ friend: Friend)
+}
+
 class AddFriendViewController: UIViewController {
     
     
@@ -16,6 +21,8 @@ class AddFriendViewController: UIViewController {
     @IBOutlet weak var hobby1TextField: UITextField!
     @IBOutlet weak var hobby2TextField: UITextField!
     @IBOutlet weak var hobby3TextField: UITextField!
+    
+    var delegate: AddFriendDelegate?
     
 
     override func viewDidLoad() {
@@ -53,6 +60,8 @@ class AddFriendViewController: UIViewController {
             !hobby3.isEmpty {
             friend.hobbies.append(hobby3)
         }
-        // we would normally use a modelController to pass this new data, but in this case we're going to use a delegate
+        // we would normally use a modelController to pass this new data, but in this case we're going to use a delegate, the friend already exists now, full configured
+        
+        delegate?.friendWasAdded(friend)
     }
 }

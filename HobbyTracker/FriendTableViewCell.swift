@@ -15,16 +15,19 @@ class FriendTableViewCell: UITableViewCell {
     @IBOutlet weak var hometownLabel: UILabel!
     @IBOutlet weak var numberOfHobbiesLabel: UILabel!
     
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    var friend: Friend? {
+        didSet {                             // Property Observer: if friend changes, it'll run the brackets
+            updateViews()
+        }
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    private func updateViews() {
+        
+        guard let friend = friend else { return }
+        
+        hometownLabel.text = friend.hometown
+        nameLabel.text = friend.name
+        numberOfHobbiesLabel.text = String(friend.hobbies.count)
     }
-
+    
 }
