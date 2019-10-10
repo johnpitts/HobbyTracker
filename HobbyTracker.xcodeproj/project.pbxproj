@@ -16,6 +16,7 @@
 		FCBE7F16234F8F940083CB81 /* FriendDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBE7F15234F8F940083CB81 /* FriendDetailViewController.swift */; };
 		FCBE7F18234F8FB30083CB81 /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBE7F17234F8FB30083CB81 /* FriendTableViewCell.swift */; };
 		FCBE7F1A234F8FC20083CB81 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBE7F19234F8FC20083CB81 /* Friend.swift */; };
+		FCBE7F1D234FB5A40083CB81 /* AddFriendProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBE7F1C234FB5A40083CB81 /* AddFriendProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		FCBE7F15234F8F940083CB81 /* FriendDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendDetailViewController.swift; sourceTree = "<group>"; };
 		FCBE7F17234F8FB30083CB81 /* FriendTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
 		FCBE7F19234F8FC20083CB81 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		FCBE7F1C234FB5A40083CB81 /* AddFriendProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				FCBE7F1B234F90430083CB81 /* View Controllers */,
 				FCBE7F17234F8FB30083CB81 /* FriendTableViewCell.swift */,
 				FCBE7F19234F8FC20083CB81 /* Friend.swift */,
+				FCBE7F1C234FB5A40083CB81 /* AddFriendProtocol.swift */,
 				FCBE7F05234CEABB0083CB81 /* Main.storyboard */,
 				FCBE7F08234CEABD0083CB81 /* Assets.xcassets */,
 				FCBE7F0A234CEABD0083CB81 /* LaunchScreen.storyboard */,
@@ -159,6 +162,7 @@
 				FCBE7F04234CEABB0083CB81 /* FriendsTableViewController.swift in Sources */,
 				FCBE7F18234F8FB30083CB81 /* FriendTableViewCell.swift in Sources */,
 				FCBE7F1A234F8FC20083CB81 /* Friend.swift in Sources */,
+				FCBE7F1D234FB5A40083CB81 /* AddFriendProtocol.swift in Sources */,
 				FCBE7F16234F8F940083CB81 /* FriendDetailViewController.swift in Sources */,
 				FCBE7F02234CEABB0083CB81 /* AppDelegate.swift in Sources */,
 			);

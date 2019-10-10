@@ -9,9 +9,7 @@
 import UIKit
 
 // put the protocol into the file that's sending the data
-protocol AddFriendDelegate {
-    func friendWasAdded(_ friend: Friend)
-}
+
 
 class AddFriendViewController: UIViewController {
     
