@@ -52,11 +52,11 @@ class AddFriendViewController: UIViewController {
             !hobby1.isEmpty {
             friend.hobbies.append(hobby1)
         }
-        if let hobby2 = hobby1TextField.text,
+        if let hobby2 = hobby2TextField.text,
             !hobby2.isEmpty {
             friend.hobbies.append(hobby2)
         }
-        if let hobby3 = hobby1TextField.text,
+        if let hobby3 = hobby3TextField.text,
             !hobby3.isEmpty {
             friend.hobbies.append(hobby3)
         }
