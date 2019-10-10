@@ -25,7 +25,7 @@ class FriendTableViewCell: UITableViewCell {
         
         guard let friend = friend else { return }
         
-        hometownLabel.text = friend.hometown
+        hometownLabel.text = "   \(friend.hometown)"
         nameLabel.text = friend.name
         numberOfHobbiesLabel.text = String(friend.hobbies.count)
     }
